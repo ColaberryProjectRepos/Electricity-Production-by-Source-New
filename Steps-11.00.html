@@ -1,0 +1,19 @@
+
+Adding Calendar
+11
+<p><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/11/1.jpg" style="width: 1525.06px; height: 738.113px;"></p><p class="MsoListParagraphCxSpFirst" style="margin-left:0in;mso-add-space:auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">1.Creating
+Calendar Table. On Power BI desktop under Modeling click on new table button.
+Type the Dax formula below in the Dax formula bar, click on the check mark, and
+save<o:p></o:p></span></p><p class="MsoListParagraphCxSpLast" style="margin-left:0in;mso-add-space:auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Calendar
+= FILTER(CALENDAR(DATE(2000, 1, 1), DATE(2021, 1, 1)), DAY([Date]) = 31 &amp;&amp;
+MONTH([Date]) = 12)<o:p></o:p></span></p><p>
+
+
+
+</p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">Year = FORMAT('Calendar'[Date], "yyyy")</span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p><p class="MsoNormal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/11/2.gif" style="width: 1516.38px; height: 796.456px;"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p>
+
+<p>&nbsp;<a href="https://www.youtube.com/watch?v=BfFvNFTacNY" target="_blank">Create Calander Table</a></p>
+
