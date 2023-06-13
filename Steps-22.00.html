@@ -1,0 +1,119 @@
+
+Quest toward Renewable (Waterfall Chart)
+22
+<p><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/22/1.jpg" style="width: 25%;"></p><p><br></p><p class="MsoListParagraphCxSpFirst" style="margin-left:.75in;mso-add-space:auto;
+text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">1.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Before
+going to waterfall chart, create a measure description table Create the
+following table &nbsp;<o:p></o:p></span></p><p>
+
+</p><p class="MsoListParagraphCxSpLast" style="margin-left:1.0in;mso-add-space:auto;
+text-indent:-.25in;mso-list:l1 level1 lfo2"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;mso-ascii-font-family:Calibri;
+mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;mso-bidi-font-family:
+Calibri">-<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;
+font-family:&quot;Arial&quot;,sans-serif">On the Power BI Desktop Home ribbon, Click on
+Enter data, name the&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; first column
+header as ID and the second column header as Sources and Name the table
+“.RenVsNonRen”</span></p><p class="MsoListParagraphCxSpLast" style="margin-left:1.0in;mso-add-space:auto;
+text-indent:-.25in;mso-list:l1 level1 lfo2"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/22/2.gif" style="width: 1466.4px; height: 1082.76px;"><span style="font-size:12.0pt;line-height:107%;
+font-family:&quot;Arial&quot;,sans-serif"><o:p></o:p></span></p><p class="MsoListParagraphCxSpFirst" style="margin-left:1.0in;mso-add-space:auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p><p class="MsoListParagraphCxSpFirst" style="margin-left:.75in;mso-add-space:auto;
+text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">1.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Next, Create
+Measure<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left: 50px;"><span style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Arial&quot;,sans-serif">Variance = SWITCH(SELECTEDVALUE('.RenVsNonRen'[ID]),1,[Hydro],2,[Coal]*-1,3,[Wind],4,[Gas]*-1,5,&nbsp; [OtherRen],6,[Nuclear]*-1,7,[Solar],8,[Oil]*-1)<o:p></o:p></span></p><p class="MsoListParagraphCxSpFirst" style="margin-left:1.0in;mso-add-space:auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">
+
+
+
+</span></p><p class="MsoListParagraphCxSpLast"><span style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Format :- Percentage decimal =1<o:p></o:p></span></p><p class="MsoListParagraphCxSpFirst" style="margin-left:1.0in;mso-add-space:auto"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/22/3.jpg" style="width: 100%;"></p><p class="MsoListParagraphCxSpFirst" style="margin-left:.75in;mso-add-space:auto;
+text-indent:-.25in;mso-list:l0 level1 lfo1"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">2.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Now,
+Create Waterfall Chart using the below steps<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">1.
+Click on an empty space on the canvas, and from the visualizations pane select
+Waterfall Chart.<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">2.
+Drag Sources for x axis From .RenVsNonRen Table and Variance for Column y-axis
+from electricity measure.<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">3.
+Drag all the Tooltips = RenProd, Renewable YOY,
+NonRenProd, Non Renewable YOY, RenVsNonRenRatio,Hydro prod, Hydro, Coal prod,
+Coal, Wind Prod, Wind, Gas prod`, Gas, OtherRen Prod, OtherRen, Nuclera Prod,
+Nuclear, Solar Prod, Solar, Oil Prod, Oil<o:p></o:p></span></p><p class="MsoListParagraphCxSpLast" style="margin-left:.75in;mso-add-space:auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">In the
+Formatting Tab-&gt;<o:p></o:p></span></p><p>
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-left:.5in"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X-axis: On, Font =Arial, size = 12,
+Color = #1A1A1A,Title = Off</span></p><p class="MsoListParagraphCxSpFirst" style="margin-left:.75in;mso-add-space:auto;
+text-indent:-.25in;mso-list:l0 level1 lfo1"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">3.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Y-axis:
+On, Font =Arial, size = 12, Color = <a name="_Hlk132737800">#1A1A1A</a>. Title:
+Off. <o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">4.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Legend:
+On, Position = Top left,Text: Font = Calibri, size =12, Color =#1A1A1A. Title:
+Off.<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">5.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Gridlines:
+Horizontal: Off.<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">6.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Column
+Color = Increase #1AAB40, Decrease #F82A1B, Show total column = Off. <o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">7.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Data
+labels: Off<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">8.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">5. In
+the Formatting Tab-&gt;<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">9.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">General-&gt;Properties-&gt;Size:
+Height = 311, Width = 345, Position: Horizontal = 228, Vertical =405, <o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">10.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Title:
+Quest towards Renewable, Font = DIN, Size = 16, Color = #FFFFFF, Background= #A38600
+, Center alignment<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">11.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Effect:
+Background Color= #A0D1FF, Trasparency = 70%. <o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-left:.75in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">12.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Visual
+Border =#808080</span><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif"><o:p></o:p></span></p><p class="MsoNormal" style="margin-left:.5in"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span></p><p class="MsoListParagraphCxSpLast" style="margin-left:.75in;mso-add-space:auto;
+text-indent:-.25in;mso-list:l0 level1 lfo1"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">13.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Tooltips:
+On, Font =Din, Size = 10, Label Color = #C8C8C8, Value Color #EAEAEA.<o:p></o:p></span></p><p class="MsoNormal" style="margin-left:.5in"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/22/4.gif" style="width: 1500.89px; height: 942.211px;"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p>
+
+<p><a href="https://www.youtube.com/watch?v=KMJKyaSnEwc" target="_blank">Create and Format Waterfall Chart</a></p>
+
