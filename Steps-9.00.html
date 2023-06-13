@@ -1,0 +1,85 @@
+
+Transforming the Data in Power Query Editor
+9
+<p><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/9/1.jpg" style="width: 100%;"></p><p><br></p><p class="MsoListParagraph" style="margin-left: 29px; text-indent: -0.25in;"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">1.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Click
+on the drop-down button in Year Column and Select Years from 2000 to 2020.</span></p><p class="MsoListParagraph" style="margin-left: 29px; text-indent: -0.25in;"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/9/2.jpg" style="width: 50%;"></p><p class="MsoListParagraph" style="margin-left: 29px; text-indent: -0.25in;"><br></p><p class="MsoListParagraph" style="margin-left:40.5pt;mso-add-space:auto;
+text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">1.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Rename
+Entity column to Country<o:p></o:p></span></p><p class="MsoListParagraph" style="margin-left: 29px; text-indent: -0.25in;">
+
+</p><p class="MsoNormal" style="margin-left:.25in"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">3. Rename the table Electricity
+Production by Source to ' Electricity '</span></p><p class="MsoNormal" style=""><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/9/3.gif" style="width: 100%;"><span style="font-family: Arial, sans-serif; font-size: 12pt;"><br></span></p><p class="MsoNormal" style=""><span style="font-family: Arial, sans-serif; font-size: 12pt;"><br></span></p><p class="MsoNormal" style=""><span style="font-family: Arial, sans-serif; font-size: 12pt;">4. Now to change ‘year’ column to date format, first
+Duplicate the Year Column and rename it to Year Source,</span><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">5. Then change Original year column data type to text. To
+do that, in the home ribbon, under transform section there is datatype button
+and click it and select text.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">6. Sort the year column to ascending again (by clicking
+arrow next to column name and select ascending) , now in the transform ribbon
+click datatype and select ‘date’.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">7. Now the year is in date format, change that column name
+to ‘Date’.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">8. Right Click on the Date Column and Transform-&gt;
+Year-&gt;End of the Year.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">9.Now the data in this table is ready to load, click on
+file and select close &amp; apply. You will see that table loaded into power BI.</span></p><p class="MsoNormal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/9/4.gif" style="width: 100%;"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">10. Repeat the steps 2-4 from (Step 1 Importing Data) to
+import Country Continent dataset Excel file.<o:p></o:p></span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">
+
+</span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">11. From power query editor, select Country, continent and
+subregion columns by pressing Ctrl key and Right click and click Remove Other
+Columns</span></p><p class="MsoNormal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/9/5.gif" style="width: 100%;"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">12. Select Merge Queries from Home in the ribbon and Choose
+Continent Country table and Electricity Table and select Country columns from
+both the tables and Choose Left Outer Join. Click Ok.</span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">13. Electricity Table will be added with a new column-&gt;
+Expand that column by clicking on Expand button and Select Continent and
+Country to Expand and hit ok.<o:p></o:p></span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">
+
+
+
+
+
+</span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">14. Rename Both the columns as Country_ and Continent.
+Right click each column and unselect Null values from both the columns. Then
+Click Remove Empty from Continent column.</span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p><p class="MsoNormal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/9/6.gif" style="width: 100%;"><span style="font-family: Arial, sans-serif; font-size: 12pt;">&nbsp;</span><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">15. Add 2 custom columns for Total Electricity Production
+by Source using the below formula and data type as Decimal Number.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">Renewable_Energy_Production = &nbsp;&nbsp;&nbsp;Solar + Wind + Other Renewable + Hydro<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">NonRenewable_Energy_Production =&nbsp; &nbsp;Oil +
+Gas + Nuclear + Coal&nbsp;</span></p><p class="MsoNormal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/9/7.jpg" style="width: 50%;"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p><p class="MsoNormal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/9/8.gif" style="width: 100%;"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p>
+
+<p><a href="https://www.youtube.com/watch?v=KJGaLWpInKI" target="_blank">Clean, Transform and Load Data</a></p>
+
