@@ -1,0 +1,506 @@
+
+Creating Measure Production and YOY
+12
+<p class="MsoNormal" style="margin-left:-4.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">From the "Home" tab
+in ribbon, click "Enter Data" and just rename the blank table to
+"MeasuresForElectricity"&nbsp; and
+click OK. Click on Measures table in the fields section and then right click
+and choose 'new measure' and enter 1 measure formula from below and click tick
+next to it to create that measure. Right click on the measure table to create
+another measure and repeat the same steps until all the below measures are
+created in "MeasuresForElectricity" table.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">Measures:<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:.25in;mso-add-space:auto;
+text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">1.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">RenProd
+= SUM(Electricity[Renewable_Energy_Production])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;text-indent:-.25in;
+line-height:13.5pt;mso-list:l0 level1 lfo1;background:#FFFFFE"><!--[if !supportLists]--><span style="font-size: 12pt; font-family: Arial, sans-serif;">2.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 12pt; font-family: Arial, sans-serif;">NonRenProd =</span><span style="font-size: 12pt; font-family: Arial, sans-serif;"> </span><span style="font-size: 12pt; font-family: Arial, sans-serif;">SUM(Electricity[NonRenewable_Energy_Production])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">3.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Solar
+Prod = SUM(Electricity[Electricity from solar
+(TWh)])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">4.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Oil
+Prod = Sum(Electricity[Electricity from oil (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">5.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Wind
+Prod = Sum(Electricity[Electricity from wind (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">6.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Gas
+Prod = SUM(Electricity[Electricity from gas (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">7.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Other
+Renewable prod = Sum(Electricity[Electricity from other renewables (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">8.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Nuclear
+Prod = Sum(Electricity[Electricity from nuclear (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">9.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">hydroProd
+= SUM(Electricity[Electricity from hydro (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">10.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Coal
+prod = Sum(Electricity[Electricity from coal (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">11.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Total
+Generate = SUM(Electricity[Total Generate])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">12.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">RenVsNonRenRatio
+= DIVIDE( [Renewable YOY],[NonRenewable YOY])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:13.5pt;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">13.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Renewable
+YOY = <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR
+Ren_CY=SUM(Electricity[Renewable_Energy_Production ])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR
+Ren_PrevY = CALCULATE(SUM(Electricity[Renewable_Energy_Production
+]),SAMEPERIODLASTYEAR('Calendar'[Date]))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">RETURN<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">IF(ISBLANK(Ren_PrevY),0,DIVIDE((Ren_CY-Ren_PrevY),
+Ren_PrevY))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:.25in;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:.25in;mso-add-space:auto;
+text-indent:-.25in;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">14.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">NonRenewable
+YOY = <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR
+NRen_CY=SUM(Electricity[NonRenewable_Energy_Production ])<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR NRen_PrevY =
+CALCULATE(SUM(Electricity[NonRenewable_Energy_Production
+]),SAMEPERIODLASTYEAR('Calendar'[Date]))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">RETURN<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">IF(ISBLANK(NRen_PrevY),0,DIVIDE((NRen_CY-NRen_PrevY),
+NRen_PrevY))<o:p></o:p></span></p>
+
+<p class="MsoListParagraph" style="margin-left:13.5pt;mso-add-space:auto;
+text-indent:22.5pt"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">15. Solar = <o:p></o:p></span></p>
+
+<p class="MsoListParagraph" style="margin-left:13.5pt;mso-add-space:auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR
+Solar_CY=SUM(Electricity[Electricity from solar (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR Solar_PrevY = CALCULATE(SUM(Electricity[Electricity
+from solar (TWh)]),SAMEPERIODLASTYEAR('Calendar'[Date]))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">RETURN<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">IF(ISBLANK(Solar_PrevY),0,DIVIDE((Solar_CY-Solar_PrevY),
+Solar_PrevY))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-left:-4.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">16.Oil = <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR
+Oil_CY=SUM(Electricity[Electricity from oil (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR oil_PrevY = CALCULATE(SUM(Electricity[Electricity
+from oil (TWh)]),SAMEPERIODLASTYEAR('Calendar'[Date]))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt;tab-stops:13.5pt"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">RETURN<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt;tab-stops:13.5pt"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">IF(ISBLANK(oil_PrevY),0,DIVIDE((oil_CY-oil_PrevY),
+oil_PrevY))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt;tab-stops:13.5pt"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoListParagraph" style="margin-left:9.0pt;mso-add-space:auto;
+text-indent:-.25in;mso-list:l1 level1 lfo2;tab-stops:13.5pt"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">17.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Wind =
+<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt;tab-stops:13.5pt"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR
+Wind_CY=SUM(Electricity[Electricity from wind (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt;tab-stops:13.5pt"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR
+Wind_PrevY = CALCULATE(SUM(Electricity[Electricity from wind
+(TWh)]),SAMEPERIODLASTYEAR('Calendar'[Date]))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt;tab-stops:13.5pt"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">RETURN<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt;tab-stops:13.5pt"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">IF(ISBLANK(Wind_PrevY),0,DIVIDE((Wind_CY-Wind_PrevY),
+Wind_PrevY))&nbsp;</span></p><p class="MsoNormal" style="margin-left:13.5pt;tab-stops:13.5pt"><br></p><p class="MsoNormal" style="margin-left:13.5pt;tab-stops:13.5pt"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif"> <o:p></o:p></span></p>
+
+<p class="MsoListParagraph" style="margin-left:9.0pt;mso-add-space:auto;
+text-indent:-.25in;mso-list:l1 level1 lfo2"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">18.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Gas = <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR
+Gas_CY=SUM(Electricity[Electricity from gas (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR Gas_PrevY = CALCULATE(SUM(Electricity[Electricity
+from gas (TWh)]),SAMEPERIODLASTYEAR('Calendar'[Date]))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">RETURN<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">IF(ISBLANK(Gas_PrevY),0,DIVIDE((Gas_CY-Gas_PrevY),
+Gas_PrevY))</span></p><p class="MsoNormal" style="margin-left:13.5pt"><span style="text-indent: -0.25in; font-size: 12pt; font-family: Arial, sans-serif;"><br></span></p><p class="MsoNormal" style=""><span style="text-indent: -0.25in; font-size: 12pt; font-family: Arial, sans-serif;">19.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><span style="text-indent: -0.25in; font-size: 12pt; font-family: Arial, sans-serif;">OtherRen
+=</span><br></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">VAR ORen_CY=SUM(Electricity[Electricity from other
+renewables (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">VAR ORen_PrevY = CALCULATE(SUM(Electricity[Electricity from
+other renewables (TWh)]),SAMEPERIODLASTYEAR('Calendar'[Date]))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">RETURN <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">IF(ISBLANK(ORen_PrevY),0,DIVIDE((ORen_CY-ORen_PrevY),
+ORen_PrevY))</span></p><p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;"><o:p><br></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;"><o:p><br></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:22.5pt;mso-add-space:auto;text-indent:-.25in;
+line-height:13.5pt;mso-list:l1 level1 lfo2;background:#FFFFFE"><!--[if !supportLists]--><span style="font-size: 12pt; font-family: Arial, sans-serif;">20.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size: 12pt; font-family: Arial, sans-serif;">Nuclear
+= <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">VAR Nuclear_CY=SUM(Electricity[Electricity from nuclear
+(TWh)])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">VAR Nuclear_PrevY = CALCULATE(SUM(Electricity[Electricity
+from nuclear (TWh)]),SAMEPERIODLASTYEAR('Calendar'[Date]))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">RETURN<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">IF(ISBLANK(Nuclear_PrevY),0,DIVIDE((Nuclear_CY-Nuclear_PrevY),
+Nuclear_PrevY))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:22.5pt;mso-add-space:auto;text-indent:-.25in;
+line-height:13.5pt;mso-list:l1 level1 lfo2;background:#FFFFFE"><!--[if !supportLists]--><span style="font-size: 12pt; font-family: Arial, sans-serif;">21.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size: 12pt; font-family: Arial, sans-serif;">Hydro = <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">VAR hydro_CY=SUM(Electricity[Electricity from hydro (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">VAR hydro_PrevY = CALCULATE(SUM(Electricity[Electricity
+from hydro (TWh)]),SAMEPERIODLASTYEAR('Calendar'[Date]))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">RETURN<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:.25in;mso-add-space:auto;line-height:13.5pt;
+background:#FFFFFE"><span style="font-size: 12pt; font-family: Arial, sans-serif;">IF(ISBLANK(hydro_PrevY),0,DIVIDE((hydro_CY-hydro_PrevY),
+hydro_PrevY))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-left:4.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">22. Coal = <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR
+Coal_CY=Sum(Electricity[Electricity from coal (TWh)])<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">VAR Coal_PrevY =
+CALCULATE(SUM(Electricity[Electricity from coal (TWh)]),SAMEPERIODLASTYEAR('Calendar'[Date]))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">RETURN<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">IF(ISBLANK(Coal_PrevY),0,DIVIDE((Coal_CY-Coal_PrevY),
+Coal_PrevY))<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-left:13.5pt"><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Creating Indicater&nbsp; Measure <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:27.0pt;mso-add-space:
+auto;text-indent:-.25in;mso-list:l2 level1 lfo3"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">23.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">RebVsNonRen
+= <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;SWITCH(<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">TRUE(),[RenVsNonRenRatio]&gt;0,
+<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">UNICHAR(9650),UNICHAR(9660))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto;text-indent:-.25in;mso-list:l2 level1 lfo3"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">24.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Renewable
+= <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;SWITCH(<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">TRUE(),[Renewable
+YOY]&gt;0, <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">UNICHAR(9650),UNICHAR(9660))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto;text-indent:-.25in;mso-list:l2 level1 lfo3"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">25.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Non
+Renewable = <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;SWITCH(<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; TRUE(),[Non_Renewable YOY]&gt;0, <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; UNICHAR(9650),UNICHAR(9660))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto;text-indent:-.25in;mso-list:l2 level1 lfo3"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">26.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">.Solar
+= <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;SWITCH(<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">TRUE(),[Solar]&gt;0,
+<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;UNICHAR(9650),UNICHAR(9660))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto;text-indent:-.25in;mso-list:l2 level1 lfo3"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">27.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">.Oil =
+<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">SWITCH(<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">TRUE(),[Oil]&gt;0,
+<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:27.0pt;mso-add-space:auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">UNICHAR(9650),UNICHAR(9660))<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:
+&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:27.0pt;mso-add-space:
+auto;text-indent:-.25in;mso-list:l2 level1 lfo3"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">28.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">.Wind
+= <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">SWITCH(<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">TRUE(),[Wind]&gt;0,
+<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">UNICHAR(9650),UNICHAR(9660))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto;text-indent:-.25in;mso-list:l2 level1 lfo3"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">29.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">.Gas =
+<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;SWITCH(<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">TRUE(),[Gas]&gt;0,
+<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">UNICHAR(9650),UNICHAR(9660))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto;text-indent:-.25in;mso-list:l2 level1 lfo3"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">30.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">Other
+Ren = <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;SWITCH(<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">TRUE(),[OtherRen]&gt;0,
+<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">UNICHAR(9650),UNICHAR(9660))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto;text-indent:-.25in;mso-list:l2 level1 lfo3"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">31.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">.Nuclear
+= <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;SWITCH(<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">TRUE(),[Nuclear]&gt;0,
+<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">UNICHAR(9650),UNICHAR(9660))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto;text-indent:-.25in;mso-list:l2 level1 lfo3"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">32.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">.Hydro.
+= <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;SWITCH(<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">TRUE(),[Hydro]&gt;0,
+<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">UNICHAR(9650),UNICHAR(9660))<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto;text-indent:-.25in;mso-list:l2 level1 lfo3"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial">33.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">.Coal
+= <o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;SWITCH(<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:27.0pt;mso-add-space:
+auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">TRUE(),[Coal]&gt;0,
+<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:27.0pt;mso-add-space:auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">UNICHAR(9650),UNICHAR(9660))</span></p><p class="MsoListParagraphCxSpLast" style="margin-left:27.0pt;mso-add-space:auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p><p class="MsoListParagraphCxSpLast" style="margin-left:27.0pt;mso-add-space:auto"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/12/1.gif" style="width: 1461.63px; height: 933.823px;"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p><p class="MsoListParagraphCxSpLast" style="margin-left:27.0pt;mso-add-space:auto"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p><p class="MsoListParagraphCxSpLast" style="margin-left:27.0pt;mso-add-space:auto"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1267/12/2.gif" style="width: 1461.88px; height: 851.349px;"><span style="font-size:12.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif"><o:p><br></o:p></span></p>
+
+<p><a href="https://www.youtube.com/watch?v=tDqN2TKfqiw" target="_blank">Creating Measures using DAX</a><br></p>
+
